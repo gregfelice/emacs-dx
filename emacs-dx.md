@@ -49,8 +49,8 @@ I'm collecting perspectives in a document that I hope to share and refine with c
   - AI / data science developer
   - GenAI developer
 - Opinionated modules that make architectural decisions for the user
-  - We use LSP - even though package X is "written in rust and faster", we are standardizing on this for maintainability
-  - We make decisions on Eglot, LSP, flymake, etc etc so you don't have to
+  - e.g., We use LSP - even though package X is "written in rust and faster", we are standardizing on this for maintainability
+  - e.g., We make decisions on Eglot, LSP, flymake, etc etc so you don't have to
 - Simplicity and reliability
   - Modules certification that ensures they are tested and working
   - Modules that support only 29 and 30
@@ -69,10 +69,11 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 
 **We will know when we are succeeding when we stop hearing...**
 - When I need to combine tools to support my entire workflow, everyting starts breaking
-- There's 1,000 helpful suggestions, and I can't get any working
+- There's 1,000 helpful suggestions, most are incomplete, and I can't get anything working
 - My configuration for jsp, ts, html, css, jsx, jstx is a mess, and never works as advertised
-- There's ambiguous and conflicting recommendtations on core approaches for LSP vs Ruff. I don't understand them and I shouldn't have to
+- There's ambiguous and conflicting recommendtations on critical setup approaches (e.g., language servers command completion, etc). I don't understand them **and I shouldn't have to**
 - Lots of information on the web is outdated. I wish there was a single source of information that helped me do my job
+- I have a day job and don't have time for this
 
 **We will know we are succeeding when we start hearing...**
 - This is easier to set up and use than VSCode
@@ -82,6 +83,7 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 - I'm finally able to adopt emacs as my single go-to tool
 
 ## Critical Roles
+We'll end up needing to consider the critical jobs for these roles. 
 - The Developer (Software, Data, Data Science, etc)
 - Module Builders (Low level enabling, developer workflow enabling, etc)
 - 3rd Party Software & Tooling Developers (Apache Spark, Beam, Scikit, etc)
@@ -90,7 +92,15 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 - Educators (YT, etc)
 
 ## User Stories
-- TBD
+We can detail specific tasks to perform here. Some examples:
+
+- As a developer, I want to configure my fonts to my tastes without breaking anything, so I can have an enjoyable coding experience day and night.
+- As a developer, I want to eliminate any unused modules from my searches, so I can eliminate cognitive overload.
+- As a developer, I want to ensure all the features defined in a language server spec like LSP are working, so I can gt down to coding.
+- As a developer, I want to eliminate any guesswork from what modules are considered "current best practice", so I can get down to coding.
+- As a developer, I want less "endless choice" and :extensibility", and more "usability" and "productivity", so I can get my job done.
+- As a developer, I expect Emacs to integrate into best practice code > build > test workflows for my tribe, like React. The Emacs tail should not wag the dog.
+
 
 ### Metrics
 
