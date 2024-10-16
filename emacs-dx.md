@@ -40,7 +40,7 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 - That have deadlines and priorities, and often make their living coding
 - Who need to make economic decisions about their scarce time
 - Who love tooling and learning deeply, but can't frontload days of work to get it working
-- Who may feel passion and affection for open source and Emacs, but sadly abandon it because it overfocuses on minuta without addressing the larger need
+- Who may feel passion and affection for open source and Emacs, but sadly abandon it because it overfocuses on details without addressing their larger professional need
 
 **Our solution**
 - Addresses common challenges developers experience when trying to get up to speed in Emacs
