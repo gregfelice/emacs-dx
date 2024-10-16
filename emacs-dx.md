@@ -250,7 +250,7 @@ Automated Profile Tests
 
 # Appendix
 
-### Persona Detail
+## Customer Research
 
 - The Developer
   - Software
@@ -278,3 +278,10 @@ Automated Profile Tests
 - Educators
   - YT
   - Lecturers
+
+## Substitute Research
+
+### VSCode
+TBD
+
+
