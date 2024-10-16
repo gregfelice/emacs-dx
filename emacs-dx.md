@@ -295,4 +295,22 @@ Educators
 ### VSCode
 TBD
 
+## Domain Research
+
+Protesilaos Stavrou (Prot)
+- https://www.youtube.com/@protesilaos
+- https://protesilaos.com/
+
+Henrik Lissner
+- https://github.com/doomemacs
+
+Nicolas Rougier
+- https://github.com/rougier
+- https://github.com/rougier/nano-emacs
+
+Gavin Freeborn
+- https://www.youtube.com/@GavinFreeborn
+
+
+
 
