@@ -90,8 +90,8 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 - Developer
 
 - Acquisition
-    - # developers aware of solution
-	- # developers downloading solution
+    - num of developers aware of solution
+	- num of developers downloading solution
     
   - Activation
     - Time to hello world in language & workflow of choice
