@@ -27,8 +27,6 @@ There's an opportunity to further help developers accelerate with Emacs by solvi
 
 I'm collecting perspectives in a document that I hope to share and refine with community members.
 
-Would you mind meeting for 30 minutes? I'd love to ask you a few questions and understand your point of view on this subject.
-
 ## Vision
 
 **For software developers that have jobs to do**
