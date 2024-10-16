@@ -1,4 +1,4 @@
-# emacs-dx
+# emacs-dx (The Emacs Developer Experience)
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
