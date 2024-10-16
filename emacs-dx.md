@@ -4,7 +4,7 @@
 **Table of Contents**
 
 - [emacs-dx (The Emacs Developer Experience)](#emacs-dx-the-emacs-developer-experience)
-    - [Opportunity: Improve the Emacs Developer Experience](#opportunity-improve-the-emacs-developer-experience)
+    - [Developers Have Jobs to Do](#developers-have-jobs-to-do)
     - [Critical Roles](#critical-roles)
     - [User Stories](#user-stories)
         - [Metrics](#metrics)
@@ -28,9 +28,9 @@
 
 <!-- markdown-toc end -->
 
-## Opportunity: Improve the Emacs Developer Experience
+## Developers Have Jobs to Do
 
-**Developers have jobs to do. Many developers want to use Emacs to get them done, but quickly give up on it because of a frustrating and time consuming configuration experience. The root problems driving these frustrations are solvable. This document describes how to help developers quickly get productive on Emacs on the tasks that matter to them. We believe we can increase the number of developers who try Emacs, get value quickly enough to use it more, and promote its virtues to friends.**
+**Many developers want to use Emacs, but quickly give up on it because of a frustrating and time consuming configuration experience. The root problems driving these frustrations are solvable. This document describes how to help developers quickly get productive on Emacs on the tasks that matter to them. We believe we can increase the number of developers who try Emacs, get value quickly enough to use it more, and promote its virtues to friends.**
 
 **For software developers**
 - That have deadlines and priorities, and often make their living coding
