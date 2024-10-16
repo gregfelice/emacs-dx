@@ -112,7 +112,6 @@ We can detail specific tasks to perform here. Some examples:
 - As a developer, I want to ensure all the features defined in a language server spec like LSP are working, so I can gt down to coding.
 - As a developer, I want to eliminate any guesswork from what modules are considered "current best practice", so I can get down to coding.
 - As a developer, I want less "endless choice" and "extensibility", and more "usability" and "productivity", so I can get my job done. 
-- As a developer, I want you to respect that I make my living coding, and have limited time and multiple priorities, don't assume I don't want to invest in learning Emacs more deeply.
 - As a developer, I expect Emacs to integrate into best practice code > build > test workflows for my tribe, like React. The Emacs tail should not wag the dog.
 
 
