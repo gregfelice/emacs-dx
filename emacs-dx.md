@@ -6,7 +6,7 @@
 - [emacs-dx](#emacs-dx)
     - [Opportunity: Improve the Developer Experience in Emacs](#opportunity-improve-the-developer-experience-in-emacs)
     - [Vision](#vision)
-    - [More Persona Details](#more-persona-details)
+    - [Critical Roles](#critical-roles)
     - [User Stories](#user-stories)
         - [Metrics](#metrics)
         - [Potential Substitutes](#potential-substitutes)
@@ -22,7 +22,9 @@
         - [Website (github? other?)](#website-github-other)
 - [To Be Sorted](#to-be-sorted)
 - [Appendix](#appendix)
-    - [-](#-)
+    - [Customer Research](#customer-research)
+    - [Substitute Research](#substitute-research)
+        - [VSCode](#vscode)
 
 <!-- markdown-toc end -->
 
@@ -146,48 +148,50 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 - Task (an individual job to do within the context of the Critical User Journey)
 - Tool (something that is incorporated into the CUJ to enable a task
 
-#### Components (the modular architecture of all of this. design should align to the features and structures defined in the base emacs first. some terms here are just conceptual.)
+#### Components 
 
-- Goal: Keep this simple. Don't create unneeded work. The value is in being able to provide guarantees this all just works OOB (out of the box).
+The modular architecture of all of this. design should align to the features and structures defined in the base emacs first. some terms here are just conceptual.
 
-- UI Enhancement
-  - Themes (colors, etc)
+Goal: Keep this simple. Don't create unneeded work. The value is in being able to provide guarantees this all just works OOB (out of the box).
 
-- Coding Support
-  - Completion
-  - Linter
-  - Debugger
-  - Style & Syntax
+UI Enhancement
+- Themes (colors, etc)
 
-- Documentation & Help (presented in the overall context of the "profile")
-  - key combinations
-  - task based context: to do this job, I can use these things
-  - education (what the profile and module does, what underlying modules it uses, what architectural decisions were made)
-  - everthing is well documented, and there's a single point of entry inside emacs for profile
+Coding Support
+- Completion
+- Linter
+- Debugger
+- Style & Syntax
 
-- Configuration
-  - module toggles (whatever is configurable is available in a sensible UI, and el is updated accordingly)
-  - external dependency configurations (LSP, etc)
-  - browser integration (matplotlib image outputs, local markdown preview, jupyter notebooks, etc)
+Documentation & Help (presented in the overall context of the "profile")
+- key combinations
+- task based context: to do this job, I can use these things
+- education (what the profile and module does, what underlying modules it uses, what architectural decisions were made)
+- everthing is well documented, and there's a single point of entry inside emacs for profile
 
-- Project Management & Version Control
-  - Project based configuations
-  - Version control setup and management
+Configuration
+- module toggles (whatever is configurable is available in a sensible UI, and el is updated accordingly)
+- external dependency configurations (LSP, etc)
+- browser integration (matplotlib image outputs, local markdown preview, jupyter notebooks, etc)
 
-- Build, Test, Package, Deploy
-  - Command line based runs
-  - Status of tooling integration (tools used, paths, folders, tool integration pass/fail)
+Project Management & Version Control
+- Project based configuations
+- Version control setup and management
 
-- Terminal configuration
-  - shell: zsh, bash, etc (don't force developers to learn eterm - they should not have to settle for anything less than a first-class command line experience)
-  - terminal: works with iterm2, mac terminal, do not assume x-windows
+Build, Test, Package, Deploy
+- Command line based runs
+- Status of tooling integration (tools used, paths, folders, tool integration pass/fail)
 
-- Infrastructure management
-  - k8s and docker? 
-  - Hooks into major cloud vendors?
-  
-- LLM integration
-  - OSS LLM version of copilot
+Terminal configuration
+- shell: zsh, bash, etc (don't force developers to learn eterm - they should not have to settle for anything less than a first-class command line experience)
+- terminal: works with iterm2, mac terminal, do not assume x-windows
+
+Infrastructure management
+- k8s and docker? 
+- Hooks into major cloud vendors?
+
+LLM integration
+- OSS LLM version of copilot
 
 ## Profiles
 
