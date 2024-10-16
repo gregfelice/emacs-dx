@@ -77,6 +77,14 @@ Would you mind meeting for 30 minutes? I'd love to ask you a few questions and u
 ## User Stories
 - TBD
 
+### Values
+Both are important, but we favor items on the right
+
+|----------------------------|----------------------------|
+| Comprehensive coverage for every edge case combination | Opinionated configurations |
+| Suppport for every Emacs feature and language | Enable those features that help do the most common developer jobs |
+|----------------------------|----------------------------|
+
 ### Metrics
 
 - Developer
