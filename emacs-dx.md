@@ -8,15 +8,20 @@
     - [Vision](#vision)
     - [More Persona Details](#more-persona-details)
     - [User Stories](#user-stories)
-        - [Values](#values)
         - [Metrics](#metrics)
         - [Potential Substitutes](#potential-substitutes)
-        - [A Good Solution...](#a-good-solution)
-        - [Design Constraints](#design-constraints)
-        - [Solution Features](#solution-features)
-        - [Profiles](#profiles)
-        - [Workflow](#workflow)
+        - [Acceptance Criteria](#acceptance-criteria)
+    - [Solution Design](#solution-design)
+        - [Containing Structures](#containing-structures)
+            - [Roles & Journeys](#roles--journeys)
+            - [Components (the modular architecture of all of this. design should align to the features and structures defined in the base emacs first. some terms here are just conceptual.)](#components-the-modular-architecture-of-all-of-this-design-should-align-to-the-features-and-structures-defined-in-the-base-emacs-first-some-terms-here-are-just-conceptual)
+    - [Profiles](#profiles)
+        - [Profile Bill of Materials (Included within all profiles)](#profile-bill-of-materials-included-within-all-profiles)
+        - [Profile Catalog (Profiles offered for download and install)](#profile-catalog-profiles-offered-for-download-and-install)
+    - [Distribution Channel](#distribution-channel)
+        - [Website (github? other?)](#website-github-other)
 - [To Be Sorted](#to-be-sorted)
+- [Appendix](#appendix)
     - [-](#-)
 
 <!-- markdown-toc end -->
@@ -118,41 +123,112 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 
 - VSCode
 
-### A Good Solution...
+### Acceptance Criteria
+- Fast
+- Simple
+- Maintained and maintainable 
+- Good, visible and accessible leader
+- Documented
+- Community
+- Easy to use 
+- Easy to find
+- Favored by core emacs dev, not deprecated 
+- Stable
+- No backward compatibility code, codes to emacs 29 & 30 only
 
-- a module is good because 
-- fast
-- simple
-- maintained 
-- Maintainable 
-- good leader
-- documented
-- community
-- easy to use 
-- easy to find
-- favored by core emacs dev, not deprecated 
-- stable
+## Solution Design
 
-### Design Constraints
-- No backward compat
-- codes to emacs 30 only
-- no legacy el
-- enforces testing
-- enforces docs
-- enforces publishing
-- enables updates 
-- has ci
-- abandons external el in favor of 30 internal el
+### Containing Structures
 
-### Solution Features
-- Jobs to do
-- Outside in
-- Contributor ecosystem 
-- make it easy to know the rules for publishing 
-- testing requirements
-- documentation requirements
+#### Roles & Journeys
 
-### Profiles
+- Profile (see Doom Emacs)
+- Workflow / Critical User Journey (CUJ) (somme definition of tasks within a user journey - e.g., setup & configuration, code, test, package, deploy, measure for an SDLC)
+- Task (an individual job to do within the context of the Critical User Journey)
+- Tool (something that is incorporated into the CUJ to enable a task
+
+#### Components (the modular architecture of all of this. design should align to the features and structures defined in the base emacs first. some terms here are just conceptual.)
+
+- Goal: Keep this simple. Don't create unneeded work. The value is in being able to provide guarantees this all just works OOB (out of the box).
+
+- UI Enhancement
+  - Themes (colors, etc)
+
+- Coding Support
+  - Completion
+  - Linter
+  - Debugger
+  - Style & Syntax
+
+- Documentation & Help (presented in the overall context of the "profile")
+  - key combinations
+  - task based context: to do this job, I can use these things
+  - education (what the profile and module does, what underlying modules it uses, what architectural decisions were made)
+  - everthing is well documented, and there's a single point of entry inside emacs for profile
+
+- Configuration
+  - module toggles (whatever is configurable is available in a sensible UI, and el is updated accordingly)
+  - external dependency configurations (LSP, etc)
+  - browser integration (matplotlib image outputs, local markdown preview, jupyter notebooks, etc)
+
+- Project Management & Version Control
+  - Project based configuations
+  - Version control setup and management
+
+- Build, Test, Package, Deploy
+  - Command line based runs
+  - Status of tooling integration (tools used, paths, folders, tool integration pass/fail)
+
+- Terminal configuration
+  - shell: zsh, bash, etc (don't force developers to learn eterm - they should not have to settle for anything less than a first-class command line experience)
+  - terminal: works with iterm2, mac terminal, do not assume x-windows
+
+- Infrastructure management
+  - k8s and docker? 
+  - Hooks into major cloud vendors?
+  
+- LLM integration
+  - OSS LLM version of copilot
+
+## Profiles
+
+### Profile Bill of Materials (Included within all profiles)
+
+Automated Profile Tests
+- Themes are readable
+- No keymap clashes
+
+### Profile Catalog (Profiles offered for download and install)
+
+1. Global
+  1. Version control: Github
+  1. Terminal configuration: iterm2, mac terminal
+  1. Shell configuration: zsh
+  1. Universal color theme management
+
+1. Profile: React.js development
+  1. JavaScript 
+  1. Typescript 
+  1. jstx
+
+1. Profile: Data science development
+  1. Spark
+  1. Python
+  1. venv
+  1. Anaconda
+
+1. Profile: Infrastructure management
+  1. AWS, Google, MS 
+  1. Docker
+
+
+## Distribution Channel
+### Website (github? other?)
+- Visible tests 
+- Visible certifications
+- Publishing
+- Searching and matching
+
 - Profile certification & incubation
 - Runs on
 - Uses
@@ -161,98 +237,19 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 - Owner, committer
 - Startup time
 - Latency and performance 
-- Update dunctions
+- Update functions
 - Diagnostic and inspection functions
 - Bill of materials / manifests 
 - What is it using that's outdated or deprecated 
 - Integration testing between profiles
 - Behaviour driven testing spec
 
-### Workflow
- - Machine learning workflow
- - React workflow
- - Python workflow
 
 # To Be Sorted
-
-Init.el Auto config
-
-Actions 
-- clean up old and confusing communications
-- define what is supported and what is not, and why
-
-Architecture 
-- automate all build config documentation publishing 
-- make available on web
-
-Information arch
-- profile > goals
-- workflow
-- job to do / task
-- tool
-
-Components
-- completion
-- linter
-- debugger
-- style & syntax
-
-Tasks
-- project setup and config
-- build 
-- test
-- package 
-- deploy
-- monitor and measure
-- document
-- version control
-- build and ci status
-
-Belief 
-- all systems worth considering are text based 
-- except for notebooks, plots, ui previews
-
-Tests
-- theme is readable
-- no keymap clash 
-
-Conflicting architecture areas
-- eglot and lsp
-- different modes for same language
-- language combinations in same file 
-- package loading
-- conflicting themes
-
-Profiles are opinionated 
-Profiles combine jobs to do
-Profiles are encapsulated
-Profiles are authoritative for decisions on modes, etc
-
-Projects
-Combine profiles
-
-Supports
-- GitHub 
-- react 
-- Apache / data science
-- spark
-- phoenix envs to AWS, Google, MS 
-- docker
-- iterm2
-
-- python
-- JavaScript 
-- typescript 
-- jstx
-- zsh
-
-Most common and extensible
-- tests 
-- certifications
-- publishing
-- searching and matching
+- 
 
 
+# Appendix
 
 ### Persona Detail
 
