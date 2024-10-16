@@ -28,11 +28,9 @@
 
 <!-- markdown-toc end -->
 
-## Opportunity: Improve the Developer Experience in Emacs
+## Opportunity: Improve the Emacs Developer Experience
 
-There's an opportunity to further help developers accelerate with Emacs by solving for some common (and solvable) problems in how tooling is constructed and shared on top of the base Emacs distribution.
-
-I'm collecting perspectives in a document that I hope to share and refine with community members.
+There's an opportunity to help developers accelerate with Emacs by solving some common problems in how tooling is constructed and shared on top of the base Emacs distribution.
 
 ## Vision
 
