@@ -21,53 +21,61 @@ Would you mind meeting for 30 minutes? I'd love to ask you a few questions and u
 
 ## Vision
 
-For software developers
-That need to x, y, z
-Our solution a
-Does p, d, q
-Unlike f, g
-We r, t
+**For software developers that have jobs to do**
 
-### Personas
+**Our solution**
+  Addresses common challenges developers experience when trying to get up to speed in Emacs
+  Offers better tooling to support the higher level goals and objectives
+  Educates along the way, but does not frontload learning requriements such that adopting Emacs becomes untentable
 
-- The Developer
-  - Software
-    - Back End
-	- Front End
-  - Data
-  - Data Science
+**Features include**
+- Higher level modules based on role and popular tool combinations, e.g.,
+  - React developer
+  - AI / data science developer
+  - GenAI developer
+- Opinionated modules that make architectural decisions for the user
+  - We use LSP - even though package X is "written in rust and faster", we are standardizing on this for maintainability
+  - We make decisions on Eglot, LSP, flymake, etc etc so you don't have to
+- Simplicity and reliability
+  - Modules certification that ensures they are tested and working
+  - Modules that support only 29 and 30
+  - Elimination of complex and hard to maintain elisp to acommodate thousands of modules and configuration edge cases
+- Module certification framework
+  - Makes it easy for module developers to design to a specification
+  - Guidance and structure for test design and continuous integration
+- Module publishing
+  - One place to find certified modules
+  - Web analytics to measure adoption
+  - Issue reporting back to module developers
+  - Lightweight & transparent governance
 
-- Module Builders
+**Unlike substitutes**
+- VSCode (work on differentiation TBD)
 
-- Software & Tooling Developers
-  - Apache Projects
-    - Spark
-	- Beam
-  - AI Products & Library Maintainers
-    - PYTorch
-	- Tf
-	- Numpy
+**We will know when we are succeeding when we stop hearing...**
+- When I need to combine tools to support my entire workflow, everyting starts breaking
+- There's 1,000 helpful suggestions, and I can't get any working
+- My configuration for jsp, ts, html, css, jsx, jstx is a mess, and never works as advertised
+- There's ambiguous and conflicting recommendtations on core approaches for LSP vs Ruff. I don't understand them and I shouldn't have to
+- Lots of information on the web is outdated. I wish there was a single source of information that helped me do my job
 
-- Emacs Governance & Maintainer Bodies
+**We will know we are succeeding when we start hearing...**
+- This is easier to set up and use than VSCode
+- There's cool videos on YT that support my deeper understanding of this "jobs to do" oriented module scheme
+- This supports everything I need
+- I feel more integrated with the command line, and I like that
+- I'm finally able to adopt emacs as my single go-to tool
 
-- Standards Governance Bodies
-  - LSP
+## More Persona Details
+- The Developer (Software, Data, Data Science, etc)
+- Module Builders (Low level enabling, developer workflow enabling, etc)
+- 3rd Party Software & Tooling Developers (Apache Spark, Beam, Scikit, etc)
+- Emacs Governance & Maintainer Bodies (FSF, etc)
+- Standards Governance Bodies (LSP, etc)
+- Educators (YT, etc)
 
-- Educators
-  - YT
-  - Lecturers
-
-### User Stories
-
-#### Goals
-
-
-#### Complications
-- I have to put hours or even days into a complete setup, and it often still doesn't work
-
-### Root Problems
+## User Stories
 - TBD
-
 
 ### Metrics
 
@@ -238,15 +246,31 @@ Most common and extensible
 
 
 
+### Persona Detail
 
+- The Developer
+  - Software
+    - Back End
+	- Front End
+  - Data
+  - Data Science
 
+- Module Builders
 
+- Software & Tooling Developers
+  - Apache Projects
+    - Spark
+	- Beam
+  - AI Products & Library Maintainers
+    - PYTorch
+	- Tf
+	- Numpy
 
+- Emacs Governance & Maintainer Bodies
 
+- Standards Governance Bodies
+  - LSP
 
-
-
-
-
-
-
+- Educators
+  - YT
+  - Lecturers
