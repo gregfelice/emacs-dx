@@ -32,9 +32,9 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 **For software developers that have jobs to do**
 
 **Our solution**
-  Addresses common challenges developers experience when trying to get up to speed in Emacs
-  Offers better tooling to support the higher level goals and objectives
-  Educates along the way, but does not frontload learning requriements such that adopting Emacs becomes untentable
+- Addresses common challenges developers experience when trying to get up to speed in Emacs
+- Offers better tooling to support the higher level goals and objectives
+- Educates along the way, but does not frontload learning requriements such that adopting Emacs becomes untentable
 
 **Features include**
 - Higher level modules based on role and popular tool combinations, e.g.,
@@ -84,14 +84,6 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 
 ## User Stories
 - TBD
-
-### Values
-Both are important, but we favor items on the right
-
-|----------------------------|----------------------------|
-| Comprehensive coverage for every edge case combination | Opinionated configurations |
-| Suppport for every Emacs feature and language | Enable those features that help do the most common developer jobs |
-|----------------------------|----------------------------|
 
 ### Metrics
 
