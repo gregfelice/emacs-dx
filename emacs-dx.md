@@ -5,9 +5,19 @@
 
 - [emacs-dx](#emacs-dx)
     - [Opportunity: Improve the Developer Experience in Emacs](#opportunity-improve-the-developer-experience-in-emacs)
-    - [Problem Definition](#problem-definition)
-    - [Characteristics of a Good Solution](#characteristics-of-a-good-solution)
-    - [Design Considerations](#design-considerations)
+    - [Vision](#vision)
+    - [More Persona Details](#more-persona-details)
+    - [User Stories](#user-stories)
+        - [Values](#values)
+        - [Metrics](#metrics)
+        - [Potential Substitutes](#potential-substitutes)
+        - [A Good Solution...](#a-good-solution)
+        - [Design Constraints](#design-constraints)
+        - [Solution Features](#solution-features)
+        - [Profiles](#profiles)
+        - [Workflow](#workflow)
+- [To Be Sorted](#to-be-sorted)
+    - [-](#-)
 
 <!-- markdown-toc end -->
 
