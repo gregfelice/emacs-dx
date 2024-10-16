@@ -30,8 +30,7 @@
 
 ## Opportunity: Improve the Emacs Developer Experience
 
-**Developers have jobs to do. Many developers want to use Emacs to get them done, but rule it out or give up on it because of a frustrating and time consuming configuration experience.
-The root problems driving these frustrations are solvable. This document describes how address them so that developers can use Emacs to its fullest potential and get their jobs done.**
+**Developers have jobs to do. Many developers want to use Emacs to get them done, but quickly give up on it because of a frustrating and time consuming configuration experience. The root problems driving these frustrations are solvable. This document describes how to help developers quickly get productive on Emacs in their professional roles. We believe we can increase the number of developers who try Emacs, get value quickly enough to use it more, and promote its virtues to friends.**
 
 **For software developers**
 - That have deadlines and priorities, and often make their living coding
