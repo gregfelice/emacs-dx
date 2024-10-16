@@ -36,7 +36,10 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 
 ## Vision
 
-**For software developers that have jobs to do**
+**For software developers**
+- That have deadlines and priorities, and often make their living coding
+- Who need to economic decisions about their scarce time
+- Who love tooling and learning deeply, but can't frontload days of work to get it working
 
 **Our solution**
 - Addresses common challenges developers experience when trying to get up to speed in Emacs
