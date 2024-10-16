@@ -86,6 +86,17 @@
 - I feel more integrated with the command line, and I like that
 - I'm finally able to adopt Emacs as my go-to tool
 
+## Solution Approach & Principles
+- Recognize different roles with different goals: 
+  - Software developers who want to use Emacs for the best text and command line based development experience
+  - Module builders who love the extensibility of Emacs
+- Recognize the need to build modules for a user in mind - in this case, a software developer who can choose whatever they want
+- Address the problem of cross-package interdependencies
+  - This is an area where little vaidation seems to occur, and it drives a great deal of overly complex configurations and causes errors
+- Believe that while Emacs may be infinitely extensible, it needs to take specific forms to drive value at any scale
+- Believe that there is value in combining efforts to get a developer profile right to potentially solve problems for a million users
+- Regardless of specific role, the general target user is a power user that loves command lines, source control, and terminals. This can be a web developer, data scientist, or infrastructure engineer
+
 ## Critical Roles
 We'll end up needing to consider the critical jobs for these roles. 
 - The Developer (Software, Data, Data Science, etc)
@@ -159,7 +170,7 @@ Emacs Governance & Maintainer Bodies
 - Stable
 - No backward compatibility code, codes to emacs 29 & 30 only
 
-## Solution Design
+## Solution Design Details
 
 ### Containing Structures
 
