@@ -84,7 +84,7 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 - There's cool videos on YT that support my deeper understanding of this "jobs to do" oriented module scheme
 - This supports everything I need
 - I feel more integrated with the command line, and I like that
-- I'm finally able to adopt emacs as my single go-to tool
+- I'm finally able to adopt Emacs as my go-to tool
 
 ## Critical Roles
 We'll end up needing to consider the critical jobs for these roles. 
