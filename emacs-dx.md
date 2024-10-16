@@ -94,31 +94,29 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 
 ### Metrics
 
-- Developer
-
+Developer
 - Acquisition
-    - num of developers aware of solution
-	- num of developers downloading solution
-    
-  - Activation
-    - Time to hello world in language & workflow of choice
+  - num of developers aware of solution
+  - num of developers downloading solution
+  
+- Activation
+  - Time to hello world in language & workflow of choice
 
-  - Retention
-    - Engagement (MAU / DAU)
+- Retention
+  - Engagement (MAU / DAU)
 
-  - Monetization
-    - Patreon donations to support FSF / Emacs development
-	- YT engagaement for community contributors
-
-- Monthly Active Users (MAU)
+- Monetization
+  - Patreon donations to support FSF / Emacs development
+  - YT engagaement for community contributors
+  - Monthly Active Users (MAU)
   - Daily Active Users (DAU)
 
-- Module Builder
-  - Time to onboard module
-  - Time to update module
-  
-- Emacs Governance & Maintainer Bodies
-  - Emacs user metrics
+Module Builder
+- Time to onboard module
+- Time to update module
+
+Emacs Governance & Maintainer Bodies
+- Emacs user metrics
 
 ### Potential Substitutes
 
@@ -256,32 +254,31 @@ Automated Profile Tests
 
 ## Customer Research
 
-- The Developer
-  - Software
-    - Back End
-	- Front End
-  - Data
-  - Data Science
+The Developer
+- Software
+  - Back End
+  - Front End
+- Data
+- Data Science
 
-- Module Builders
+Module Builders
 
-- Software & Tooling Developers
-  - Apache Projects
-    - Spark
-	- Beam
-  - AI Products & Library Maintainers
-    - PYTorch
-	- Tf
-	- Numpy
+Software & Tooling Developers
+- Apache Projects
+  - Spark
+  - Beam
+- AI Products & Library Maintainers
+  - PYTorch
+  - Tf
+  - Numpy
 
-- Emacs Governance & Maintainer Bodies
-
+Emacs Governance & Maintainer Bodies
 - Standards Governance Bodies
   - LSP
 
-- Educators
-  - YT
-  - Lecturers
+Educators
+- YT
+- Lecturers
 
 ## Substitute Research
 
