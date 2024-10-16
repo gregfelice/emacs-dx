@@ -22,6 +22,7 @@
 - [To Be Sorted](#to-be-sorted)
 - [Appendix](#appendix)
     - [Customer Research](#customer-research)
+        - [User Population Sizing](#user-population-sizing)
     - [Substitute Research](#substitute-research)
         - [VSCode](#vscode)
     - [Domain Research](#domain-research)
@@ -302,6 +303,14 @@ Emacs Governance & Maintainer Bodies
 Educators
 - YT
 - Lecturers
+
+### User Population Sizing
+These will be very wrong at first, but serve as a mental exercise to see what effort addresses what part of a potential user base, in what timeframe.
+
+- React developers - 20 million?
+- Data & AI developers - 30 million?
+- Angular developers - 5 million?
+- Scientific paper writers - ?
 
 ## Substitute Research
 
