@@ -71,9 +71,9 @@
 **Unlike substitutes**
 - VSCode
   - GUI driven. Does a really nice job at things, but ultimately not oriented to the terminal oriented developer
-- Doom Emacs, Spacemacs, etc
+- Emacs Distros
   - Admirable efforts to tame the configuration complexity of Emacs, but still have problems meeting the specific needs of in-demand development roles
-  - Also introduces "higher order" organizataional constructs such as profiles, but they are not yet utilized. Is there an opportunity to leverage / help accelerate?
+  - Also introduces "higher order" organizational constructs such as profiles, but they are not yet utilized. Is there an opportunity to leverage / help accelerate?
 
 **We will know when we are succeeding when we stop hearing...**
 - When I need to combine tools to support my entire workflow, everyting starts breaking
