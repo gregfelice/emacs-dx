@@ -3,9 +3,8 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [emacs-dx](#emacs-dx)
-    - [Opportunity: Improve the Developer Experience in Emacs](#opportunity-improve-the-developer-experience-in-emacs)
-    - [Vision](#vision)
+- [emacs-dx (The Emacs Developer Experience)](#emacs-dx-the-emacs-developer-experience)
+    - [Opportunity: Improve the Emacs Developer Experience](#opportunity-improve-the-emacs-developer-experience)
     - [Critical Roles](#critical-roles)
     - [User Stories](#user-stories)
         - [Metrics](#metrics)
@@ -14,7 +13,7 @@
     - [Solution Design](#solution-design)
         - [Containing Structures](#containing-structures)
             - [Roles & Journeys](#roles--journeys)
-            - [Components (the modular architecture of all of this. design should align to the features and structures defined in the base emacs first. some terms here are just conceptual.)](#components-the-modular-architecture-of-all-of-this-design-should-align-to-the-features-and-structures-defined-in-the-base-emacs-first-some-terms-here-are-just-conceptual)
+            - [Components ](#components)
     - [Profiles](#profiles)
         - [Profile Bill of Materials (Included within all profiles)](#profile-bill-of-materials-included-within-all-profiles)
         - [Profile Catalog (Profiles offered for download and install)](#profile-catalog-profiles-offered-for-download-and-install)
@@ -25,14 +24,14 @@
     - [Customer Research](#customer-research)
     - [Substitute Research](#substitute-research)
         - [VSCode](#vscode)
+    - [Domain Research](#domain-research)
 
 <!-- markdown-toc end -->
 
 ## Opportunity: Improve the Emacs Developer Experience
 
-There's an opportunity to help developers accelerate with Emacs by solving some common problems in how tooling is constructed and shared on top of the base Emacs distribution.
-
-## Vision
+**Developers have jobs to do. Many developers want to use Emacs to get them done, but rule it out or give up on it because of a frustrating and time consuming configuration experience.
+The root problems driving these frustrations are solvable. This document describes how address them so that developers can use Emacs to its fullest potential and get their jobs done.**
 
 **For software developers**
 - That have deadlines and priorities, and often make their living coding
