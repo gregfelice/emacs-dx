@@ -42,7 +42,8 @@
 - Addresses common challenges developers experience when trying to get up to speed in Emacs
 - Reduces friction on finding, trying, using, and managing Emacs based tools
 - Focuses on better tooling for in-demand roles like react development, AI & data science development or full-stack combinations of both
-- Educates along the way, but does not frontload learning requriements such that adopting Emacs becomes untentable
+- Offers clear comments and guidance on **what** certain elisp configurations do, and **why** a certain pacakge or standard was chosen over another
+- Ensures the effort to configure Emacs does not outweigh the benefits of using it
 
 **Features include**
 - Higher level modules based on role and popular tool combinations, e.g.,
