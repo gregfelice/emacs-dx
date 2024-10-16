@@ -13,11 +13,7 @@
 
 ## Opportunity: Improve the Developer Experience in Emacs
 
-My name is Greg Felice - I am a x-googler / product manager, hands-on software developer, and a 30+ year Emacs user.
-
-I wanted to reach out to you on the subject of improving the software developer experience for Emacs.
-
-I think there's an opportunity to further help developers accelerate with Emacs by solving for some common (and solvable) problems in how tooling is constructed and shared on top of the base Emacs distribution.
+There's an opportunity to further help developers accelerate with Emacs by solving for some common (and solvable) problems in how tooling is constructed and shared on top of the base Emacs distribution.
 
 I'm collecting perspectives in a document that I hope to share and refine with community members.
 
@@ -32,11 +28,79 @@ Does p, d, q
 Unlike f, g
 We r, t
 
-### Problems & Complications
+### Personas
 
-- Emacs terms are hard to use
-- Describe what we can't do in emacs and what tools it partners with
+- The Developer
+  - Software
+    - Back End
+	- Front End
+  - Data
+  - Data Science
 
+- Module Builders
+
+- Software & Tooling Developers
+  - Apache Projects
+    - Spark
+	- Beam
+  - AI Products & Library Maintainers
+    - PYTorch
+	- Tf
+	- Numpy
+
+- Emacs Governance & Maintainer Bodies
+
+- Standards Governance Bodies
+  - LSP
+
+- Educators
+  - YT
+  - Lecturers
+
+### User Stories
+
+#### Goals
+
+
+#### Complications
+- I have to put hours or even days into a complete setup, and it often still doesn't work
+
+### Root Problems
+- TBD
+
+
+### Metrics
+
+- Developer
+
+- Acquisition
+    - # developers aware of solution
+	- # developers downloading solution
+    
+  - Activation
+    - Time to hello world in language & workflow of choice
+
+  - Retention
+    - Engagement (MAU / DAU)
+
+  - Monetization
+    - Patreon donations to support FSF / Emacs development
+	- YT engagaement for community contributors
+
+- Monthly Active Users (MAU)
+  - Daily Active Users (DAU)
+
+
+- Module Builder
+  - Time to onboard module
+  - Time to update module
+  
+- Emacs Governance & Maintainer Bodies
+  - Emacs user metrics
+
+### Potential Substitutes
+
+- VSCode
 
 ### A Good Solution...
 
