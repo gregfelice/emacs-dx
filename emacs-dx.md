@@ -79,7 +79,7 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 - I feel more integrated with the command line, and I like that
 - I'm finally able to adopt emacs as my single go-to tool
 
-## More Persona Details
+## Critical Roles
 - The Developer (Software, Data, Data Science, etc)
 - Module Builders (Low level enabling, developer workflow enabling, etc)
 - 3rd Party Software & Tooling Developers (Apache Spark, Beam, Scikit, etc)
@@ -110,7 +110,6 @@ I'm collecting perspectives in a document that I hope to share and refine with c
 
 - Monthly Active Users (MAU)
   - Daily Active Users (DAU)
-
 
 - Module Builder
   - Time to onboard module
