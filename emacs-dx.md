@@ -7,7 +7,7 @@
     - [Developers Have Jobs to Do](#developers-have-jobs-to-do)
     - [Guiding Principles](#guiding-principles)
         - [Acceptance Criteria](#acceptance-criteria)
-        - [RElatd Documents](#relatd-documents)
+        - [Related Documents](#related-documents)
 
 <!-- markdown-toc end -->
 
