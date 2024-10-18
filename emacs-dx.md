@@ -30,9 +30,8 @@
 **A good solution...**
 - Ensures the effort to configure Emacs does not outweigh the benefits of using it
 - Addresses common challenges developers experience when trying to get up to speed in Emacs
-- Reduces friction on finding, trying, using, and managing Emacs based tools
 - Enables better management of package groups that must interoperate harmoniously to be effective
-- Focuses on better tooling for in-demand roles like react development, AI & data science development or full-stack combinations of both
+- Narrows the focus on better tooling for in-demand roles like react development, AI & data science development or full-stack combinations of both
 - Offers prescriptive guidance on standards and architectural choices, explains what options were considered, and why one was ultimately selected
 
 **Features include**
