@@ -25,7 +25,7 @@
 - Who need to make economic decisions about their scarce time
 - Who prefer to work at command lines, often move between multiple machines handling infrastructue and coding tasks, and need a powerful editor to get jobs done
 - Who love tooling and learning deeply, but can't frontload days of work to get it working
-- Who may feel passion and affection for open source and Emacs, but sadly abandon it because it overfocuses on details without addressing their larger professional need
+- Who may feel passion and affection for open source and Emacs, but sadly abandon it because it does not their larger professional need
 
 **A good solution...**
 - Ensures the effort to configure Emacs does not outweigh the benefits of using it
