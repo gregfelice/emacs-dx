@@ -32,7 +32,7 @@
   - all document types required for role work properly (e.g., js, ts, jsx, jstx, mixed mode html/css)
 - A simple profile-base.el package provives sensible comforts that all profiles inherit (themes, search enhancements, etc)
 - Maintainers collaborate on architectural decisions that affect all packages (How to approach LSP, eglot, flymake, etc)
-- Pull requests are accepted from conntributors
+- Pull requests are accepted from contributors
 
 
 # Proposed Vision
