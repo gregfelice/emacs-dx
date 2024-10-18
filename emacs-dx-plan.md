@@ -8,6 +8,8 @@ Document Status: DRAFT
 
 - [emacs-dx](#emacs-dx)
     - [Solution Design Details](#solution-design-details)
+    - [Critical Roles](#critical-roles)
+        - [Metrics](#metrics)
         - [Containing Structures](#containing-structures)
             - [Roles & Journeys](#roles--journeys)
             - [Components ](#components)
@@ -28,6 +30,44 @@ Document Status: DRAFT
 
 
 ## Solution Design Details
+
+
+## Critical Roles
+We'll end up needing to consider the critical jobs for these roles. 
+- The Developer (Software, Data, Data Science, etc)
+- Module Builders (Low level enabling, developer workflow enabling, etc)
+- 3rd Party Software & Tooling Developers (Apache Spark, Beam, Scikit, etc)
+- Emacs Governance & Maintainer Bodies (FSF, etc)
+- Standards Governance Bodies (LSP, etc)
+- Educators (YT, etc)
+
+### Metrics
+
+Developer
+- Acquisition
+  - num of developers aware of solution
+  - num of developers downloading solution
+  
+- Activation
+  - Time to hello world in language & workflow of choice
+
+- Retention
+  - Engagement (MAU / DAU)
+
+- Monetization
+  - Patreon donations to support FSF / Emacs development
+  - YT engagaement for community contributors
+  - Monthly Active Users (MAU)
+  - Daily Active Users (DAU)
+
+Module Builder
+- Time to onboard module
+- Time to update module
+
+Emacs Governance & Maintainer Bodies
+- Emacs user metrics
+
+
 
 ### Containing Structures
 
