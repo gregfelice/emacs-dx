@@ -23,9 +23,9 @@
 **Minimum Viable Design**
 - Goal - get a developer productive in under 10 minutes - asumes familiarity with base emacs
 - Support 2-3 Developer Profiles with curated and reliable el, available for clone on github, supported against vanilla emacs
-  - profile-python-developer.el (first)
-  - profile-react-developver.el
-  - profile-infrastructure-manager.el
+  - profile-python-developer.el (release 1)
+  - profile-react-developver.el (release 2)
+  - profile-infrastructure-manager.el (release 3)
 - User can activate one or many profiles without conflicts
   - keymappings are relevant and all work, no superfluous commands in search command completion (no js when im in python, only one prettify package, etc)
   - all developer features work without additional configuration: at-point documentation, on-the-fly-diagnostic annotation, definitions and identifiers, buffer navigation by symbol, completion at-point, code insertion, markdown
