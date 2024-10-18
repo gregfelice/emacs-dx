@@ -11,6 +11,9 @@
 
 <!-- markdown-toc end -->
 
+[emacs-dx Discussion on Discord](https://discord.gg/9F4DSE25r7)
+
+
 ## Developers Have Jobs to Do
 
 **Many developers want to use Emacs, but quickly give up on it because of a frustrating and time consuming configuration experience. The root problems driving these frustrations are solvable. This document describes how to help developers quickly get productive on Emacs on the tasks that matter to them. We believe we can increase the number of developers who try Emacs, get value quickly enough to use it more, and promote its virtues to friends.**
