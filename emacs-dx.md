@@ -95,5 +95,8 @@
 - Favored by core emacs dev, not deprecated 
 - Stable
 
+### RElatd Documents
+* [Detailed Requirements](emacs-dx-user-stories.md)
+* [Design and Implementation Plan](emacs-dx-plan.md)
 
 
