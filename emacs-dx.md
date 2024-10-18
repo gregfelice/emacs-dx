@@ -82,7 +82,7 @@
 - Recognize the importance of the part-time contributor community. Help them contribute improvements with solid frameworks, well-documented design constraints, and knowledgable governance to drive excellence.
 - Recognize the importance of the Emacs codebase developers. Seek their advice on where the overall architecture for Emacs is going. Consider this when designing modules.
 
-### Acceptance Criteria
+## Acceptance Criteria
 - Fast
 - Simple
 - Maintained and maintainable 
@@ -94,7 +94,7 @@
 - Favored by core emacs dev, not deprecated 
 - Stable
 
-### Related Documents
+## Related Documents
 * [Detailed Requirements](emacs-dx-user-stories.md)
 * [Design and Implementation Plan](emacs-dx-plan.md)
 
