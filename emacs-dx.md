@@ -11,8 +11,6 @@
 
 <!-- markdown-toc end -->
 
-[emacs-dx Discussion on Discord](https://discord.gg/9F4DSE25r7)
-
 
 ## Developers Have Jobs to Do
 
@@ -20,6 +18,7 @@
 
 **This document is an imperfect draft, written with the intention to collaborate with others, define a plan, and drive a measurable outcome. Comments and contributions are welcomed.**
 
+[emacs-dx Discussion on Discord](https://discord.gg/9F4DSE25r7)
 
 **For software developers**
 - That have deadlines and priorities, and often make their living coding
