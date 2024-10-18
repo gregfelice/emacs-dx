@@ -5,10 +5,9 @@
 
 - [emacs-dx](#emacs-dx)
     - [Developers Have Jobs to Do](#developers-have-jobs-to-do)
-    - [Solution Approach & Principles](#solution-approach--principles)
-    - [Critical Roles](#critical-roles)
-        - [Metrics](#metrics)
+    - [Guiding Principles](#guiding-principles)
         - [Acceptance Criteria](#acceptance-criteria)
+        - [RElatd Documents](#relatd-documents)
 
 <!-- markdown-toc end -->
 
