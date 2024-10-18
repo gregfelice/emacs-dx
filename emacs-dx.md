@@ -5,27 +5,10 @@
 
 - [emacs-dx (The Emacs Developer Experience)](#emacs-dx-the-emacs-developer-experience)
     - [Developers Have Jobs to Do](#developers-have-jobs-to-do)
+    - [Solution Approach & Principles](#solution-approach--principles)
     - [Critical Roles](#critical-roles)
-    - [User Stories](#user-stories)
         - [Metrics](#metrics)
-        - [Potential Substitutes](#potential-substitutes)
         - [Acceptance Criteria](#acceptance-criteria)
-    - [Solution Design](#solution-design)
-        - [Containing Structures](#containing-structures)
-            - [Roles & Journeys](#roles--journeys)
-            - [Components ](#components)
-    - [Profiles](#profiles)
-        - [Profile Bill of Materials (Included within all profiles)](#profile-bill-of-materials-included-within-all-profiles)
-        - [Profile Catalog (Profiles offered for download and install)](#profile-catalog-profiles-offered-for-download-and-install)
-    - [Distribution Channel](#distribution-channel)
-        - [Website (github? other?)](#website-github-other)
-- [To Be Sorted](#to-be-sorted)
-- [Appendix](#appendix)
-    - [Customer Research](#customer-research)
-        - [User Population Sizing](#user-population-sizing)
-    - [Substitute Research](#substitute-research)
-        - [VSCode](#vscode)
-    - [Domain Research](#domain-research)
 
 <!-- markdown-toc end -->
 
