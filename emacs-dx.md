@@ -20,6 +20,12 @@
 
 [emacs-dx Discussion on Discord](https://discord.gg/9F4DSE25r7)
 
+**emacs-dx is**
+- Intentionally focused
+- Depripritizes edge cases in favor of enabling most popular developer types, for example, react and python AI
+
+
+
 **For software developers**
 - That have deadlines and priorities, and often make their living coding
 - Who need to make economic decisions about their scarce time
