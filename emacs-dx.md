@@ -20,11 +20,22 @@
 
 [emacs-dx Discussion on Discord](https://discord.gg/9F4DSE25r7)
 
-**emacs-dx is**
-- Intentionally focused
-- Depripritizes edge cases in favor of enabling most popular developer types, for example, react and python AI
+**Minimum Viable Design**
+- Goal - get a developer productive in under 10 minutes - asumes familiarity with base emacs
+- Support 2-3 Developer Profiles with curated and reliable el, available for clone on github, supported against vanilla emacs
+  - profile-python-developer.el (first)
+  - profile-react-developver.el
+  - profile-infrastructure-manager.el
+- User can activate one or many profiles without conflicts
+  - keymappings are relevant and all work, no superfluous commands in search command completion (no js when im in python, only one prettify package, etc)
+  - all developer features work without additional configuration: at-point documentation, on-the-fly-diagnostic annotation, definitions and identifiers, buffer navigation by symbol, completion at-point, code insertion, markdown
+  - all document types required for role work properly (e.g., js, ts, jsx, jstx, mixed mode html/css)
+- A simple profile-base.el package provives sensible comforts that all profiles inherit (themes, search enhancements, etc)
+- Maintainers collaborate on architectural decisions that affect all packages (How to approach LSP, eglot, flymake, etc)
+- Pull requests are accepted from conntributors
 
 
+# Proposed Vision
 
 **For software developers**
 - That have deadlines and priorities, and often make their living coding
