@@ -30,7 +30,7 @@
   - keymappings are relevant and all work, no superfluous commands in search command completion (no js when im in python, only one prettify package, etc)
   - all developer features work without additional configuration: at-point documentation, on-the-fly-diagnostic annotation, definitions and identifiers, buffer navigation by symbol, completion at-point, code insertion, markdown
   - all document types required for role work properly (e.g., js, ts, jsx, jstx, mixed mode html/css)
-- A simple profile-base.el package provives sensible comforts that all profiles inherit (themes, search enhancements, etc)
+- A simple profile-base.el package provides sensible comforts that all profiles inherit (themes, search enhancements, etc)
 - Maintainers collaborate on architectural decisions that affect all packages (How to approach LSP, eglot, flymake, etc)
 - Pull requests are accepted from contributors
 
