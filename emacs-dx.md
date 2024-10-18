@@ -19,16 +19,17 @@
 **For software developers**
 - That have deadlines and priorities, and often make their living coding
 - Who need to make economic decisions about their scarce time
+- Who prefer to work at command lines, often move between multiple machines handling infrastructue and coding tasks, and need a powerful editor to get jobs done
 - Who love tooling and learning deeply, but can't frontload days of work to get it working
 - Who may feel passion and affection for open source and Emacs, but sadly abandon it because it overfocuses on details without addressing their larger professional need
 
-**Our solution**
+**A good solution...**
+- Ensures the effort to configure Emacs does not outweigh the benefits of using it
 - Addresses common challenges developers experience when trying to get up to speed in Emacs
 - Reduces friction on finding, trying, using, and managing Emacs based tools
-- Provides constructs that enable management of groups of pacakges that must interoperate harmoniously to be effective
+- Enables better management of package groups that must interoperate harmoniously to be effective
 - Focuses on better tooling for in-demand roles like react development, AI & data science development or full-stack combinations of both
-- Offers clear comments and guidance on **what** certain elisp configurations do, and **why** a certain pacakge or standard was chosen over another
-- Ensures the effort to configure Emacs does not outweigh the benefits of using it
+- Offers prescriptive guidance on standards and architectural choices, explains what options were considered, and why one was ultimately selected
 
 **Features include**
 - Higher level modules based on role and popular tool combinations, e.g.,
@@ -68,57 +69,19 @@
 - I have a day job and don't have time for this
 
 **We will know we are succeeding when we start hearing...**
-- This is easier to set up and use than VSCode
-- There's cool videos on YT that support my deeper understanding of this "jobs to do" oriented module scheme
-- This supports everything I need
+- This supports a lot of what I need to be productive, and harmonizes with key tools that don't make sense in the editor
 - I feel more integrated with the command line, and I like that
-- I'm finally able to adopt Emacs as my go-to tool
+- I'm finally able to adopt Emacs as a go-to tool
 
-## Solution Approach & Principles
-- Recognize different roles with different goals: 
-  - Software developers who want to use Emacs for the best text and command line based development experience
-  - Module builders who love the extensibility of Emacs
-- Recognize the need to build modules for a user in mind - in this case, a software developer who can choose whatever they want
-- Address the problem of cross-package interdependencies
-  - This is an area where little vaidation seems to occur, and it drives a great deal of overly complex configurations and causes errors
-- Believe that while Emacs may be infinitely extensible, it needs to take specific forms to drive value at any scale
-- Believe that there is value in combining efforts to get a developer profile right to potentially solve problems for a million users
-- Regardless of specific role, the general target user is a power user that loves command lines, source control, and terminals. This can be a web developer, data scientist, or infrastructure engineer
-
-## Critical Roles
-We'll end up needing to consider the critical jobs for these roles. 
-- The Developer (Software, Data, Data Science, etc)
-- Module Builders (Low level enabling, developer workflow enabling, etc)
-- 3rd Party Software & Tooling Developers (Apache Spark, Beam, Scikit, etc)
-- Emacs Governance & Maintainer Bodies (FSF, etc)
-- Standards Governance Bodies (LSP, etc)
-- Educators (YT, etc)
-
-### Metrics
-
-Developer
-- Acquisition
-  - num of developers aware of solution
-  - num of developers downloading solution
-  
-- Activation
-  - Time to hello world in language & workflow of choice
-
-- Retention
-  - Engagement (MAU / DAU)
-
-- Monetization
-  - Patreon donations to support FSF / Emacs development
-  - YT engagaement for community contributors
-  - Monthly Active Users (MAU)
-  - Daily Active Users (DAU)
-
-Module Builder
-- Time to onboard module
-- Time to update module
-
-Emacs Governance & Maintainer Bodies
-- Emacs user metrics
+## Guiding Principles
+- Agree that while Emacs may be infinitely extensible, it needs to take specific forms to drive value at any scale.
+- While there are different flavors of Emacs users, take the perspective that the developer is an important customer, and more effort should be made to understand and address their needs.
+- Identify the right collaboration strucrures to better govern Emacs to solve for developer problems. Create these structures if they don't exist.
+- Recognize the problems developers have in adopting and using Emacs. Have a desire for solving them.
+- Recognize that nobody can do it all. Emacs-dx will need to focus on 1-2 developer types with large user bases (for example, React.js, Python) to ship anything in a reasonable timeframe.
+- Recognize the importance of module developers, but agree on their responsibility to developers as the Emacs customer if they want to collaborate on emacs-dx.
+- Recognize the importance of the part-time contributor community. Help them contribute improvements with solid frameworks, well-documented design constraints, and knowledgable governance to drive excellence.
+- Recognize the importance of the Emacs codebase developers. Seek their advice on where the overall architecture for Emacs is going. Consider this when designing modules.
 
 ### Acceptance Criteria
 - Fast
@@ -126,11 +89,11 @@ Emacs Governance & Maintainer Bodies
 - Maintained and maintainable 
 - Good, visible and accessible leader
 - Documented
-- Community
+- Active community
 - Easy to use 
 - Easy to find
 - Favored by core emacs dev, not deprecated 
 - Stable
-- No backward compatibility code, codes to emacs 29 & 30 only
+
 
 
