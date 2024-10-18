@@ -1,4 +1,32 @@
 
+# emacs-dx
+
+Document Status: DRAFT
+
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [emacs-dx](#emacs-dx)
+    - [Solution Design Details](#solution-design-details)
+        - [Containing Structures](#containing-structures)
+            - [Roles & Journeys](#roles--journeys)
+            - [Components ](#components)
+    - [Profiles](#profiles)
+        - [Profile Bill of Materials (Included within all profiles)](#profile-bill-of-materials-included-within-all-profiles)
+        - [Profile Catalog (Profiles offered for download and install)](#profile-catalog-profiles-offered-for-download-and-install)
+    - [Distribution Channel](#distribution-channel)
+        - [Website (github? other?)](#website-github-other)
+- [To Be Sorted](#to-be-sorted)
+- [Appendix](#appendix)
+    - [Customer Research](#customer-research)
+        - [User Population Sizing](#user-population-sizing)
+    - [Substitute Research](#substitute-research)
+        - [VSCode](#vscode)
+    - [Domain Research](#domain-research)
+
+<!-- markdown-toc end -->
+
+
 ## Solution Design Details
 
 ### Containing Structures
