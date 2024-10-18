@@ -3,7 +3,7 @@
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
 **Table of Contents**
 
-- [emacs-dx (The Emacs Developer Experience)](#emacs-dx-the-emacs-developer-experience)
+- [emacs-dx](#emacs-dx)
     - [Developers Have Jobs to Do](#developers-have-jobs-to-do)
     - [Solution Approach & Principles](#solution-approach--principles)
     - [Critical Roles](#critical-roles)
