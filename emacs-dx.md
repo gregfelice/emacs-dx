@@ -80,6 +80,7 @@
 - Agree that while Emacs may be infinitely extensible, it needs to take specific forms to drive value at any scale.
 - While there are different flavors of Emacs users, take the perspective that the developer is an important customer, and more effort should be made to understand and address their needs.
 - Identify the right collaboration strucrures to better govern Emacs to solve for developer problems. Create these structures if they don't exist.
+- Look to the community for solutions. Distros like Doom Emacs identify these same problems, and even have design structures that can help solve. See what can be leveraged without reinventing the wheel. Give credit to the amazing contributions of the distro maintainers who''ve been working this problem in various forms for years.
 - Recognize the problems developers have in adopting and using Emacs. Have a desire for solving them.
 - Recognize that nobody can do it all. Emacs-dx will need to focus on 1-2 developer types with large user bases (for example, React.js, Python) to ship anything in a reasonable timeframe.
 - Recognize the importance of module developers, but agree on their responsibility to developers as the Emacs customer if they want to collaborate on emacs-dx.
