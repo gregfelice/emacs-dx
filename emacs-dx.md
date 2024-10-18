@@ -6,8 +6,8 @@
 - [emacs-dx](#emacs-dx)
     - [Developers Have Jobs to Do](#developers-have-jobs-to-do)
     - [Guiding Principles](#guiding-principles)
-        - [Acceptance Criteria](#acceptance-criteria)
-        - [Related Documents](#related-documents)
+    - [Acceptance Criteria](#acceptance-criteria)
+    - [Related Documents](#related-documents)
 
 <!-- markdown-toc end -->
 
