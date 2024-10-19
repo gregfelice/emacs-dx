@@ -63,33 +63,63 @@ analysis:
 - work needs to be done to get to a good python development ux out of the box
 - external dependency guidance (and hopefully more automated setup) is critical
 
-step by step log (starts at bottom):
+step by step log:
 
-- end scenario
-- i've spent two hours on this. i will pick this up again tomorrow and hope for the best. i have these things to read:
-  - https://emacs-lsp.github.io/lsp-mode/
-  - https://github.com/joaotavora/eglot
-  - https://tree-sitter.github.io/tree-sitter/
-  
+- start
+- install emacs from brew
+- git clone bedrock
+- uncommented dev.el in bedrock init.el
+- uncommenting eglot in dev.el
+- got treesitter error about language grammar unavailable
+- running M-x treesit-install-language-grammar to install language
+- get question: There is no recipe for python, do you want to build it interactively? (y or n) - choosing yes, taking default repo and branch
+- asked: Enter the subdirectory in which the parser.c file resides (default: "src"):
+- ctl-v and ctl-z dont work in emacs... -- seems to be mapped to mac standard keys. i like that, but it's jarring and i don't know where to configure
+- says treesitter language is installed
+- warning: Can’t guess python-indent-offset, using defaults: 4
+- open im.py
+- no indications of any coding support activated
+- enabled treesit-inspect-mode via M-x
+- seems to show current symbol in the bar
+- shows parens completion upon print(
+- does not show any code assist or code checking
+- reopen dev.el to investigate more
+- unclear on what this means ;; It is **STRONGLY** recommended that you use the base.el config if you want to use Eglot. Lots of completion things will work better.
+- unclear what eglot or treesitter do - assume i know little about these
+- go back to eglot section in dev.el
+- confused if i need to add a python server program
+
+- navigate to this, thoroughly confused by it - https://www.masteringemacs.org/article/seamlessly-merge-multiple-documentation-sources-eldoc  article says this, but I have no context on what eldoc, flycheck, flymake, lsp is.
+  '''
+    Eldoc is neither brassy nor is it intrusive, and it is why I love it. It epitomizes Emacs’s philosophy of quiet
+    enjoyment and distraction-free editing. It hides in the background, and it only emerges to share its thoughts about
+    the goings-on around point when it has something clever to say. Sadly, it’s often drowned out by its braying neighbors:
+    LSP notifications; compiler and linter messages from Flycheck or FlyMake and who knows what else.
+    '''
+  - where are each of the emacs features in their lifecycle? which are sunsetting? which are standard? which are emerging / experimental?
+  - why would i want to display messages from "multiple documentation sources at the same time"? i just want one code assist system that works.
+
 - how do i work with markdown?
   - how do i preview it?
   - i do a lot of math. how do i integrate latex, or something better than latex?
   - why doesn't my markdown show up correctly on github?
+
 - i see no way to handle jupyter notebooks in emacs.
   - is there some notebook emulator? am i expected to set up a jupyter server? if so, i'll be editing in my browser. does emacs even matter in this use case?
   - how does this work with image packages like matplotlib?
+
 - i read that eglot is a set of features for coding support - the emacs documentation shows it as almost a specification.
   - but what features within the spec are implmeneted for python? how do i know?
   - how does this differ from LSP, which also seems to offer a specification to implement?
   - how do eglot and LSP interelate if at all?
 
-- article says this, but I have no context on what eldoc, flycheck, flymake, lsp is.
-  Eldoc is neither brassy nor is it intrusive, and it is why I love it. It epitomizes Emacs’s philosophy of quiet
-  enjoyment and distraction-free editing. It hides in the background, and it only emerges to share its thoughts about
-  the goings-on around point when it has something clever to say. Sadly, it’s often drowned out by its braying neighbors:
-  LSP notifications; compiler and linter messages from Flycheck or FlyMake and who knows what else.
-    - where are each of the emacs features in their lifecycle? which are sunsetting? which are standard? which are emerging / experimental?
-    - why would i want to display messages from "multiple documentation sources at the same time"? i just want one code assist system that works.
+- i've spent two hours on this. i will pick this up again tomorrow and hope for the best. i have these things to read:
+  - https://emacs-lsp.github.io/lsp-mode/
+  - https://github.com/joaotavora/eglot
+  - https://tree-sitter.github.io/tree-sitter/
+
+- end scenario
+
     
 - navigate to this, thoroughly confused by it - https://www.masteringemacs.org/article/seamlessly-merge-multiple-documentation-sources-eldoc 
 - confused if i need to add a python server program
