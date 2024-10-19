@@ -69,6 +69,11 @@ what i think & feel:
 - i've just spent an hour trying to get this to work
 - i'm frustrated
 
+analysis:
+- bedrock can be an accelerant leading to a good experience for python
+- work needs to be done to get to a good python development ux out of the box
+- external dependency guidance (and hopefully more automated setup) is critical
+
 step by step log:
 
 - end scenario
