@@ -32,10 +32,68 @@
 ## conditions of satisfaction
 - coding support works oob
 - works on windows, mac, debian variants
+- installs and configures language server
 
-## design approach
+
+## design
+[GNU Emacs Documentation](https://www.gnu.org/software/emacs/documentation.html)
+
 - bedrock as foundation el
 - build tailored enablement for python developer on top
+
+| Capability             | Solution                                      | Supported for Python? |  
+|------------------------|-----------------------------------------------|-----------------------|
+| Syntax Checking        | Flymake                                       |                       | 
+| At-Point Documentation | Eglot                                         | 
+| Diagnostic Annotations | Eglot, via Flymake                            |
+| Identifier Definitions | Eglot, via Xref                               |
+| Buffer Navigation      | Eglot, via IMenu                              |
+| At-Point Completion    | Eglot, via Language Server                    |
+| Automatic Formatting   | Eglot                                         |
+| Completion             | Eglot, via Language Server and Company Mode   |
+| Code Insertion         | Eglot, yasnippet and Language Server          |
+| At-Point Documentation | Eglot, via ElDoc                              | 
+
+### Language Server (Python)
+- pyright
+  - cross-platform (mac, linux, windows)
+  - https://github.com/emacs-lsp/lsp-pyright
+  - pyright settings: https://github.com/microsoft/pyright/blob/main/docs/settings.md
+
+language server installation
+- this will automatically start pyright when python files are opened in emacs.
+
+npm install -g pyright
+
+(use-package lsp-mode
+  :ensure t
+  :hook (python-mode . lsp)
+  :commands (lsp lsp-deferred)
+  :init
+  (setq lsp-keymap-prefix "C-c l")  ; Or any prefix you prefer
+  )
+
+(use-package lsp-pyright
+  :ensure t
+  :hook (python-mode . (lambda ()
+                         (require 'lsp-pyright)
+                         (lsp-deferred)))
+  )
+
+
+
+
+
+
+Treesitter
+- https://www.masteringemacs.org/article/how-to-get-started-tree-sitter
+- It looks like treesitter is still somewhat bleeding edge.
+
+
+Eglot
+- [Eglot Commands](https://www.gnu.org/software/emacs/manual/html_mono/eglot.html#Eglot-Commands) for more details
+
+
 
 ## user research (what the user exeperiences)
 
