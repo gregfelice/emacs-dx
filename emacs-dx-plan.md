@@ -241,4 +241,5 @@ Nicolas Rougier
 Gavin Freeborn
 - https://www.youtube.com/@GavinFreeborn
 
-
+Bedrock
+- https://codeberg.org/ashton314/emacs-bedrock
