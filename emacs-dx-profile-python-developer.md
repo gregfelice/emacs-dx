@@ -63,7 +63,7 @@ analysis:
 - work needs to be done to get to a good python development ux out of the box
 - external dependency guidance (and hopefully more automated setup) is critical
 
-step by step log:
+step by step log (starts at bottom):
 
 - end scenario
 - i've spent two hours on this. i will pick this up again tomorrow and hope for the best. i have these things to read:
@@ -148,9 +148,15 @@ step by step log:
     ;;; Before trying to use a treesit mode.
 
 
-### dependencies
 
-not sure on these.
+git clone https://codeberg.org/ashton314/emacs-bedrock.git
+emacs --init-directory path/to/emacs-bedrock/
+
+removing all pacakges to check for emacs dependencies
+pip uninstall -r requirements.txt -y
+
+
+### dependencies?
 
 #### via brew
 86074 s000  TN     0:00.09 /opt/homebrew/Cellar/python@3.12/3.12.7_1/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python /Users/gregf/.local/bin/pylsp
@@ -164,11 +170,3 @@ tree-sitter            2024-10-18  22:59:55                          0.23.1     
 
 
 
-
-## notes
-
-git clone https://codeberg.org/ashton314/emacs-bedrock.git
-emacs --init-directory path/to/emacs-bedrock/
-
-removing all pacakges to check for emacs dependencies
-pip uninstall -r requirements.txt -y
