@@ -14,39 +14,28 @@
 - have an enjoyable coding experience
 
 ### critical user journeys & tasks
-
-set up new project
-- i do this at zsh prompt with venv and pip
-
-develop web application
-
-develop ML model
-
-manage & analyze data
-
-deploy to different environments
-
-monitor systems
-
-communicate with people
-- write & preview markdown
-- post markdown to gh
-- use gmail, whatsapp, google chat, zoom, google calendar
-
-customize by development setup
-- change iterm themes & fonts
-- change emacs themes
+- set up new project
+  - i do this at zsh prompt with venv and pip
+- develop web application
+- develop ML model
+- manage & analyze data
+- deploy to different environments
+- monitor systems
+- communicate with people
+  - write & preview markdown
+  - post markdown to gh
+  - use gmail, whatsapp, google chat, zoom, google calendar
+- customize by development setup
+  - change iterm themes & fonts
+  - change emacs themes
 
 ## conditions of satisfaction
-
 - coding support works oob
 - works on windows, mac, debian variants
 
 ## design approach
-
 - bedrock as foundation el
 - build tailored enablement for python developer on top
-
 
 ## user research (what the user exeperiences)
 
