@@ -72,7 +72,11 @@ what i think & feel:
 step by step log:
 
 - end scenario
-- i've spent two hours on this. i will pick this up again tomorrow and hope for the best.
+- i've spent two hours on this. i will pick this up again tomorrow and hope for the best. i have these things to read:
+  - https://emacs-lsp.github.io/lsp-mode/
+  - https://github.com/joaotavora/eglot
+  - https://tree-sitter.github.io/tree-sitter/
+  
 - how do i work with markdown?
   - how do i preview it?
   - i do a lot of math. how do i integrate latex, or something better than latex?
