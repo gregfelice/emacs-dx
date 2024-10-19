@@ -25,7 +25,7 @@
   - write & preview markdown
   - post markdown to gh
   - use gmail, whatsapp, google chat, zoom, google calendar
-- customize by development setup
+- customize my development setup
   - change iterm themes & fonts
   - change emacs themes
 
