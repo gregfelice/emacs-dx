@@ -89,13 +89,14 @@ step by step log:
 - go back to eglot section in dev.el
 - confused if i need to add a python server program
 
-- navigate to this, thoroughly confused by it - https://www.masteringemacs.org/article/seamlessly-merge-multiple-documentation-sources-eldoc  article says this, but I have no context on what eldoc, flycheck, flymake, lsp is.
-  '''
-    Eldoc is neither brassy nor is it intrusive, and it is why I love it. It epitomizes Emacs’s philosophy of quiet
-    enjoyment and distraction-free editing. It hides in the background, and it only emerges to share its thoughts about
-    the goings-on around point when it has something clever to say. Sadly, it’s often drowned out by its braying neighbors:
-    LSP notifications; compiler and linter messages from Flycheck or FlyMake and who knows what else.
-    '''
+- navigate to this, thoroughly confused by it - https://www.masteringemacs.org/article/seamlessly-merge-multiple-documentation-sources-eldoc
+
+> Eldoc is neither brassy nor is it intrusive, and it is why I love it. It epitomizes Emacs’s philosophy of quiet
+> enjoyment and distraction-free editing. It hides in the background, and it only emerges to share its thoughts about
+> the goings-on around point when it has something clever to say. Sadly, it’s often drowned out by its braying neighbors:
+> LSP notifications; compiler and linter messages from Flycheck or FlyMake and who knows what else.
+
+  - I have no context on what eldoc, flycheck, flymake, lsp are.
   - where are each of the emacs features in their lifecycle? which are sunsetting? which are standard? which are emerging / experimental?
   - why would i want to display messages from "multiple documentation sources at the same time"? i just want one code assist system that works.
 
