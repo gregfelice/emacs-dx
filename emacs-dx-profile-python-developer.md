@@ -121,31 +121,6 @@ step by step log:
 
 - end scenario
 
-    
-- navigate to this, thoroughly confused by it - https://www.masteringemacs.org/article/seamlessly-merge-multiple-documentation-sources-eldoc 
-- confused if i need to add a python server program
-- go back to eglot section in dev.el
-- unclear what eglot or treesitter do - assume i know little about these
-- unclear on what this means ;; It is **STRONGLY** recommended that you use the base.el config if you want to use Eglot. Lots of completion things will work better.
-- reopen dev.el to investigate more
-- does not show any code assist or code checking
-- shows parens completion upon print(
-- seems to show current symbol in the bar
-- enabled treesit-inspect-mode via M-x
-- no indications of any coding support activated
-- open im.py
-- warning: Can’t guess python-indent-offset, using defaults: 4
-- says treesitter language is installed
-- ctl-v and ctl-z dont work in emacs... -- seems to be mapped to mac standard keys. i like that, but it's jarring and i don't know where to configure
-- asked: Enter the subdirectory in which the parser.c file resides (default: "src"):
-- get question: There is no recipe for python, do you want to build it interactively? (y or n) - choosing yes, taking default repo and branch
-- running M-x treesit-install-language-grammar to install language
-- got treesitter error about language grammar unavailable
-- uncommenting eglot in dev.el
-- uncommented dev.el in bedrock init.el
-- git clone bedrock
-- install emacs from brew
-- start
 
 ## notes
 
