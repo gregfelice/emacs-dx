@@ -36,14 +36,16 @@
 
 
 ## design
-[GNU Emacs Documentation](https://www.gnu.org/software/emacs/documentation.html)
 
 - bedrock as foundation el
 - build tailored enablement for python developer on top
 
+
+[GNU Emacs Documentation](https://www.gnu.org/software/emacs/documentation.html)
+
 | Capability             | Solution                                      | Supported for Python? |  
 |------------------------|-----------------------------------------------|-----------------------|
-| Syntax Checking        | Flymake                                       |                       | 
+| Syntax Checking        | Flymake                                       |                  | 
 | At-Point Documentation | Eglot                                         | 
 | Diagnostic Annotations | Eglot, via Flymake                            |
 | Identifier Definitions | Eglot, via Xref                               |
@@ -54,6 +56,15 @@
 | Code Insertion         | Eglot, yasnippet and Language Server          |
 | At-Point Documentation | Eglot, via ElDoc                              | 
 
+
+### Eglot
+- [Eglot Commands](https://www.gnu.org/software/emacs/manual/html_mono/eglot.html#Eglot-Commands) for more details
+
+### Company Mode
+- https://company-mode.github.io/
+- available on ELPA
+
+
 ### Language Server (Python)
 - pyright
   - cross-platform (mac, linux, windows)
@@ -61,37 +72,14 @@
   - pyright settings: https://github.com/microsoft/pyright/blob/main/docs/settings.md
 
 language server installation
-- this will automatically start pyright when python files are opened in emacs.
-
-npm install -g pyright
-
-(use-package lsp-mode
-  :ensure t
-  :hook (python-mode . lsp)
-  :commands (lsp lsp-deferred)
-  :init
-  (setq lsp-keymap-prefix "C-c l")  ; Or any prefix you prefer
-  )
-
-(use-package lsp-pyright
-  :ensure t
-  :hook (python-mode . (lambda ()
-                         (require 'lsp-pyright)
-                         (lsp-deferred)))
-  )
+- will automatically start pyright when python files are opened in emacs.
 
 
-
-
-
+### Out of Scope
 
 Treesitter
 - https://www.masteringemacs.org/article/how-to-get-started-tree-sitter
 - It looks like treesitter is still somewhat bleeding edge.
-
-
-Eglot
-- [Eglot Commands](https://www.gnu.org/software/emacs/manual/html_mono/eglot.html#Eglot-Commands) for more details
 
 
 
