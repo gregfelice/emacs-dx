@@ -1,6 +1,15 @@
 
 # emacs-dx
 
+## Development Log
+
+**2024/10/30**
+Made updates to [dx-python-dev.el](https://github.com/gregfelice/emacs-dx/blob/main/emacs.d/emacs-dx/dx-python-dev.el)
+* Uses a treesitter config
+* Configures Eglot
+* Handles some basics, but still a long way to go
+* Kind people are donating their .el files, looking to integrate, test, and post what I experience
+
 **Vision: A working emacs setup for developers:**
 - A front end and back end developer profile: python AI and data science, react/next.js, based on "current good practice" env and build tooling.
 - Emacs configuration choices for you so you can get running
