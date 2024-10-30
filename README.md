@@ -3,6 +3,10 @@
 
 ## Development Log
 
+**2024/10/30 9:55**
+* Cleaned up init, ui, and python el files using donations from wunderfitz (thank you)
+* Testing and validating
+
 **2024/10/30**
 Made updates to [dx-python-dev.el](https://github.com/gregfelice/emacs-dx/blob/main/emacs.d/emacs-dx/dx-python-dev.el)
 * Uses a treesitter config

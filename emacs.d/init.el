@@ -1,20 +1,31 @@
 
 ;; Also read: <https://protesilaos.com/codelog/2022-05-13-emacs-elpa-devel/>
+(require 'package)
 
-(setq package-archives
-      '(("gnu-elpa" . "https://elpa.gnu.org/packages/")
-	("gnu-elpa-devel" . "https://elpa.gnu.org/devel/")
-	("nongnu" . "https://elpa.nongnu.org/nongnu/")
-	("melpa" . "https://melpa.org/packages/")))
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("org" . "https://orgmode.org/elpa/")
+                         ("elpa" . "https://elpa.gnu.org/packages/")))
+(add-to-list 'package-archives '("nongnu" . "https://elpa.nongnu.org/nongnu/"))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 
-;; Highest number gets priority (what is not mentioned has priority 0)
-(setq package-archive-priorities
-      '(("gnu-elpa" . 3)
-	("melpa" . 2)
-	("nongnu" . 1)))
+(package-initialize)
+(require 'use-package)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+;; Initialize use-package on non-Linux platforms
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+(require 'use-package)
+
+
+
+(setq use-package-always-ensure t)
+
+
 
 (setopt inhibit-splash-screen t)                ; If you want to turn off the welcome screen
-
 (setq find-file-visit-truename t)                  ; follow symlinks, don't ask
 
 (defun std--backup-file-name (fpath)               ; Don't litter file system with *~ backup files
@@ -28,8 +39,21 @@ If the new path's directories does not exist, create them."
 (setopt make-backup-file-name-function 'std--backup-file-name)
 
 (use-package emacs
+  ;; :hook
+  ;; (after-init . recentf-mode)
+  ;; (prog-mode . electric-pair-mode)
+
   :config
   (load-theme 'wombat t))
+
+  (pixel-scroll-precision-mode)
+  (global-auto-revert-mode 1)
+  (setq auto-revert-verbose nil)
+  (setq scroll-conservatively 101)
+  (setq enable-recursive-minibuffers t)
+  (setq create-lockfiles nil)
+
+
 
 (add-to-list 'load-path "~/.emacs.d/emacs-dx/")
 (require 'dx-ui)
