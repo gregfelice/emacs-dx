@@ -1,31 +1,23 @@
 
-(when (< emacs-major-version 29)
-  (error "You need Emacs 29 and newer; you have version %s" emacs-major-version))
+;; Also read: <https://protesilaos.com/codelog/2022-05-13-emacs-elpa-devel/>
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;;   Basic settings
-;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
- 
-(with-eval-after-load 'package
-  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t))
+(setq package-archives
+      '(("gnu-elpa" . "https://elpa.gnu.org/packages/")
+	("gnu-elpa-devel" . "https://elpa.gnu.org/devel/")
+	("nongnu" . "https://elpa.nongnu.org/nongnu/")
+	("melpa" . "https://melpa.org/packages/")))
 
-(setopt inhibit-splash-screen t)                ; If you want to turn off the welcome screen, uncomment this
-(setopt initial-major-mode 'fundamental-mode)   ; default mode for the *scratch* buffer
-(setopt display-time-default-load-average nil)  ; this information is useless for most
-(setopt auto-revert-avoid-polling t)            ; Automatically reread from disk if the underlying file changes
-(setopt auto-revert-interval 5)                 ; Some systems don't do file notifications well see https://todo.sr.ht/~ashton314/emacs-bedrock/11
-(setopt auto-revert-check-vc-info t)
-(global-auto-revert-mode)
+;; Highest number gets priority (what is not mentioned has priority 0)
+(setq package-archive-priorities
+      '(("gnu-elpa" . 3)
+	("melpa" . 2)
+	("nongnu" . 1)))
 
-(savehist-mode)                                 ; Save history of minibuffer
-;; (windmove-default-keybindings 'control)         ; Move through windows with Ctrl-<arrow keys>
-;; (setopt sentence-end-double-space nil)          ; Fix archaic defaults
-;; (when (display-graphic-p)                       ; Make right-click do something sensible
-;;  (context-menu-mode))
+(setopt inhibit-splash-screen t)                ; If you want to turn off the welcome screen
 
-(defun std--backup-file-name (fpath)            ; Don't litter file system with *~ backup files
+(setq find-file-visit-truename t)                  ; follow symlinks, don't ask
+
+(defun std--backup-file-name (fpath)               ; Don't litter file system with *~ backup files
   "Return a new file path of a given file path.
 If the new path's directories does not exist, create them."
   (let* ((backupRootDir (concat user-emacs-directory "emacs-backup/"))
@@ -35,138 +27,13 @@ If the new path's directories does not exist, create them."
     backupFilePath))
 (setopt make-backup-file-name-function 'std--backup-file-name)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;;   Discovery aids
-;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; Show the help buffer after startup
-;; (add-hook 'after-init-hook 'help-quick)
-
-;; which-key: shows a popup of available keybindings when typing a long key
-;; sequence (e.g. C-x ...)
-(use-package which-key
-  :ensure t
-  :config
-  (which-key-mode))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;;   Minibuffer/completion settings
-;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; For help, see: https://www.masteringemacs.org/article/understanding-minibuffer-completion
-
-(setopt enable-recursive-minibuffers t)                ; Use the minibuffer whilst in the minibuffer
-(setopt completion-cycle-threshold 1)                  ; TAB cycles candidates
-(setopt completions-detailed t)                        ; Show annotations
-(setopt tab-always-indent 'complete)                   ; When I hit TAB, try to complete, otherwise, indent
-(setopt completion-styles '(basic initials substring)) ; Different styles to match input to candidates
-
-(setopt completion-auto-help 'always)                  ; Open completion always; `lazy' another option
-(setopt completions-max-height 20)                     ; This is arbitrary
-(setopt completions-detailed t)
-(setopt completions-format 'one-column)
-(setopt completions-group t)
-(setopt completion-auto-select 'second-tab)            ; Much more eager
-;(setopt completion-auto-select t)                     ; See `C-h v completion-auto-select' for more possible values
-
-(keymap-set minibuffer-mode-map "TAB" 'minibuffer-complete) ; TAB acts more like how it does in the shell
-
-;; For a fancier built-in completion option, try ido-mode,
-;; icomplete-vertical, or fido-mode. See also the file extras/base.el
-
-(icomplete-vertical-mode)
-(fido-vertical-mode)
-(setopt icomplete-delay-completions-threshold 4000)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;;   Interface enhancements/defaults
-;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; Mode line information
-(setopt line-number-mode t)                        ; Show current line in modeline
-(setopt column-number-mode t)                      ; Show column as well
-
-(setopt x-underline-at-descent-line nil)           ; Prettier underlines
-(setopt switch-to-buffer-obey-display-actions t)   ; Make switching buffers more consistent
-
-(setopt show-trailing-whitespace nil)      ; By default, don't underline trailing spaces
-(setopt indicate-buffer-boundaries 'left)  ; Show buffer top and bottom in the margin
-
-;; Enable horizontal scrolling
-(setopt mouse-wheel-tilt-scroll t)
-(setopt mouse-wheel-flip-direction t)
-
-;; We won't set these, but they're good to know about
-;;
-;; (setopt indent-tabs-mode nil)
-;; (setopt tab-width 4)
-
-;; Misc. UI tweaks
-(blink-cursor-mode -1)                                ; Steady cursor
-(pixel-scroll-precision-mode)                         ; Smooth scrolling
-
-;; Use common keystrokes by default
-;; (cua-mode)
-
-;; Display line numbers in programming mode
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
-(setopt display-line-numbers-width 3)           ; Set a minimum width
-
-;; Nice line wrapping when working with text
-(add-hook 'text-mode-hook 'visual-line-mode)
-
-;; Modes to highlight the current line with
-(let ((hl-line-hooks '(text-mode-hook prog-mode-hook)))
-  (mapc (lambda (hook) (add-hook hook 'hl-line-mode)) hl-line-hooks))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;;   Tab-bar configuration
-;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; Show the tab-bar as soon as tab-bar functions are invoked
-(setopt tab-bar-show 1)
-
-;; Add the time to the tab-bar, if visible
-(add-to-list 'tab-bar-format 'tab-bar-format-align-right 'append)
-(add-to-list 'tab-bar-format 'tab-bar-format-global 'append)
-(setopt display-time-format "%a %F %T")
-(setopt display-time-interval 1)
-(display-time-mode)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;;   Theme
-;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 (use-package emacs
   :config
-  (load-theme 'modus-vivendi))          ; for light theme, use modus-operandi
+  (load-theme 'wombat t))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;;   Optional extras
-;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; 
 (add-to-list 'load-path "~/.emacs.d/emacs-dx/")
 (require 'dx-ui)
 (require 'dx-python-dev)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;
-;;;   Built-in customization framework
-;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -174,8 +41,18 @@ If the new path's directories does not exist, create them."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("98b4ef49c451350c28a8c20c35c4d2def5d0b8e5abbc962da498c423598a1cdd" default))
- '(package-selected-packages '(nord-theme eglot which-key)))
+   '("d0fd069415ef23ccc21ccb0e54d93bdbb996a6cce48ffce7f810826bb243502c"
+     "ffba0482d3548c9494e84c1324d527f73ea4e43fff8dfd0e48faa8fc6d5c2bc7"
+     "058ba0ed929f801fc4077617e816797654c7775382943520875642d5507d8696"
+     "877ef827500a2903a2415cec604c15259588aade629bd83f4cfab8703e2fde4b"
+     "f2e885fc2a2d9bf2ca730058c2ebb835ba87e98df18ef9fc5c0f143a619d4c10"
+     "621b6ed5126672e48eb261bbb86dd36bf1f584a9c34dc6e7b3d087e289c4f091"
+     "4f1e4cadfd4f998cc23338246bae383a0d3a99a5edea9bcf26922ef054671299"
+     "e7ce09ff7426c9a290d06531edc4934dd05d9ea29713f9aabff834217dbb08e4"
+     "a898625737b309036b223f6667edea08b6d028ab1fe1654bc61542c1cd2ad053"
+     "98b4ef49c451350c28a8c20c35c4d2def5d0b8e5abbc962da498c423598a1cdd"
+     default))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
